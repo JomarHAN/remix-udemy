@@ -78,4 +78,13 @@ export const ErrorBoundary = () => {
   );
 };
 
+export const meta = () => {
+  return [
+    {
+      title: "My Notes",
+      description: "Make a new note mote easier.",
+    },
+  ];
+};
+
 export const links = () => [...newNoteStyle(), ...noteListStyle()];
