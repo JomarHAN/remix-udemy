@@ -31,6 +31,15 @@ export const loader = async ({ params }) => {
   return selectedNote;
 };
 
+export const meta = ({ data }) => {
+  return [
+    {
+      title: data.title,
+      description: data.content,
+    },
+  ];
+};
+
 export const links = () => {
   return [{ rel: "stylesheet", href: styles }];
 };
